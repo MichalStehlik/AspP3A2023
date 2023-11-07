@@ -1,0 +1,13 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+    string key = "infobox";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<a asp-page-handler="Message" asp-route-txt="Zpráva">Message</a>
+
+<partial name="_InfoBoxTempData" model="@key"/>
