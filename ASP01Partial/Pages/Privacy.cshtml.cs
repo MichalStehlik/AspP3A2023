@@ -21,7 +21,6 @@ namespace ASP01Partial.Pages
 
         public IActionResult OnGetMessage(string txt)
         {
-            TempData.Add("key","text");
             TempData.AddMessage("msg1", new TempMessage(MessageType.Success, "We did it!"));
             TempData.AddMessage("msg2", new TempMessage(MessageType.Danger,  txt));
             return RedirectToPage();
