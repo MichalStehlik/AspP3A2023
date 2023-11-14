@@ -21,9 +21,15 @@ namespace ASP01Partial.Pages
 
         public IActionResult OnGetMessage(string txt)
         {
-            TempData.AddMessage("msg1", new TempMessage(MessageType.Success, "We did it!"));
-            TempData.AddMessage("msg2", new TempMessage(MessageType.Danger,  txt));
-            return RedirectToPage();
+            TempData.AddMessage(Constants.Messages.MESSAGE_ID, new TempMessage(MessageType.Success, "We did it!"));
+            TempData.AddMessage(Constants.Messages.MESSAGE_ID, new TempMessage(MessageType.Danger,  txt));
+            return RedirectToPage("Index");
+        }
+
+        public IActionResult OnGetMessage2(string txt)
+        {
+            TempData.AddMessage(Constants.Messages.MESSAGE_ID, new TempMessage(MessageType.Info, txt));
+            return RedirectToPage("Index");
         }
     }
 }
