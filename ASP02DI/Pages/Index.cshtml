@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Value</h1>
+    <a asp-page="Index" asp-page-handler="Roll">Roll</a>
+    <a asp-page="Index" asp-page-handler="Inc">Increment</a>
+</div>
