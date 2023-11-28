@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP01Partial", "ASP01Partial\ASP01Partial.csproj", "{EB70484E-1529-4153-BD98-84700F360729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP02DI", "ASP02DI\ASP02DI.csproj", "{DCF9C9E2-1D58-4458-B521-3A19522E1DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP02DI", "ASP02DI\ASP02DI.csproj", "{DCF9C9E2-1D58-4458-B521-3A19522E1DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP03Session", "ASP03Session\ASP03Session.csproj", "{9F8F2FE4-C3B3-4D88-9F78-FBF698DC8294}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DCF9C9E2-1D58-4458-B521-3A19522E1DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF9C9E2-1D58-4458-B521-3A19522E1DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCF9C9E2-1D58-4458-B521-3A19522E1DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8F2FE4-C3B3-4D88-9F78-FBF698DC8294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8F2FE4-C3B3-4D88-9F78-FBF698DC8294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8F2FE4-C3B3-4D88-9F78-FBF698DC8294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8F2FE4-C3B3-4D88-9F78-FBF698DC8294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
