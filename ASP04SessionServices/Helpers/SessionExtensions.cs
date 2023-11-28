@@ -11,8 +11,11 @@ namespace ASP04SessionServices.Helpers
 
         public static T? Get<T>(this ISession session, string key)
         {
-            var value = session.GetString(key);
-            return value == null ? default : JsonSerializer.Deserialize<T>(value);
+            T? result = default; //pro int = 0; pro string null, pro class = null ...
+            string? source = session.GetString(key) ?? default; //pokud je session prázdná, vrací null!
+            if (source != null) result = JsonSerializer.Deserialize<T>(source);
+            if (typeof(T).IsClass && result == null) result = (T)Activator.CreateInstance(typeof(T));
+            return result;
         }
     }
 }

@@ -6,10 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
-builder.Services.AddScoped<ISessionStorage<int>, SessionStorage<int>>();
-builder.Services.AddScoped<ISessionStorage<string>, SessionStorage<string>>();
-builder.Services.AddScoped<ISessionStorage<Item>, SessionStorage<Item>>();
-builder.Services.AddScoped<SessionStorage<List<Item>>>();
+builder.Services.AddScoped<ISessionService, SessionService>();
 builder.Services.AddScoped<IShoppingListManager, ShoppingListManager>();
 builder.Services.AddRazorPages();
 

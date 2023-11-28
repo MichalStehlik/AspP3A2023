@@ -4,9 +4,9 @@ namespace ASP04SessionServices.Services
 {
     public class ShoppingListManager : IShoppingListManager
     {
-        private readonly SessionStorage<List<Item>> _ss;
+        private readonly SessionService _ss;
 
-        public ShoppingListManager(SessionStorage<List<Item>> ss)
+        public ShoppingListManager(SessionService ss)
         {
             _ss = ss;
         }
