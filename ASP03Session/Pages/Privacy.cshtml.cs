@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASP03Session.Helper;
+using ASP03Session.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ASP03Session.Pages
@@ -21,6 +23,7 @@ namespace ASP03Session.Pages
         {
             Data1 = HttpContext.Session.GetString("dato2") ?? "none";
             //Data2 = _session.GetString("dato2") ?? "nothing";
+            Data2 = HttpContext.Session.Get<State>("myState")!.Text ?? "nil";
         }
     }
 }
