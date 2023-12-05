@@ -1,0 +1,20 @@
+﻿@page
+@model ASP05GameStructure.Pages.PlaceModel
+@{
+
+}
+<h1>@Model.Location!.Name</h1>
+<div>
+    @Html.Raw(Model.Location!.Description)
+</div>
+@if(Model.Location.ImagePath != null)
+{
+    <div>
+        <img src="\images\@Model.Location!.ImagePath" alt="@Model.Location!.Name" />
+    </div>
+}
+<ul>
+@foreach(var conn in Model.Connections) {
+    <li><a asp-page="Place" asp-route-id="@conn.To">@conn.Description</a></li>
+}
+</ul>
