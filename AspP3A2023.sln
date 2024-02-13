@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP03Session", "ASP03Sessio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP04SessionServices", "ASP04SessionServices\ASP04SessionServices.csproj", "{88BAFD49-BC54-4AAB-BFA2-F575D339B150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP05GameStructure", "ASP05GameStructure\ASP05GameStructure.csproj", "{9CF8FD8B-10BE-496F-9B09-BED84CF9B7E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP05GameStructure", "ASP05GameStructure\ASP05GameStructure.csproj", "{9CF8FD8B-10BE-496F-9B09-BED84CF9B7E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP06EFC", "ASP06EFC\ASP06EFC.csproj", "{E84C04D3-6824-44F8-A632-6025DD2F6D82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9CF8FD8B-10BE-496F-9B09-BED84CF9B7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF8FD8B-10BE-496F-9B09-BED84CF9B7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF8FD8B-10BE-496F-9B09-BED84CF9B7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84C04D3-6824-44F8-A632-6025DD2F6D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84C04D3-6824-44F8-A632-6025DD2F6D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84C04D3-6824-44F8-A632-6025DD2F6D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84C04D3-6824-44F8-A632-6025DD2F6D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
