@@ -2,6 +2,7 @@
 using ASP06EFC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASP06EFC.Pages
 {
@@ -20,7 +21,7 @@ namespace ASP06EFC.Pages
 
         public void OnGet()
         {
-            Students = _context.Students.ToList();
+            Students = _context.Students.Include(s => s.Classroom).ToList();
         }
     }
 }
