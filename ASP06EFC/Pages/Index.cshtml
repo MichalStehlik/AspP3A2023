@@ -23,7 +23,7 @@
     else {
         @foreach(var student in Model.Students) {
             <tr>
-                <td>@student.StudentId</td>
+                <td><a asp-page="Details" asp-route-id="@student.StudentId">@student.StudentId</a></td>
                 <td>@student.FirstName</td>
                 <td>@student.LastName</td>
                 <td>@student.Classroom.Name</td>

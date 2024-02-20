@@ -8,5 +8,6 @@ namespace ASP06EFC.Models
         [Required]
         public required string Name { get; set; }
         public ICollection<Student> Students { get; set; } = new List<Student>();
+        public ICollection<Subject> Subjects { get; set; }
     }
 }
