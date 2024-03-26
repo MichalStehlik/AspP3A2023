@@ -2,6 +2,7 @@
 using ASP08Blogisek.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASP08Blogisek.Pages
 {
@@ -19,7 +20,7 @@ namespace ASP08Blogisek.Pages
 
         public void OnGet()
         {
-            Articles = _context.Articles.ToList();
+            Articles = _context.Articles.Include(a => a.Author).ToList();
         }
     }
 }
