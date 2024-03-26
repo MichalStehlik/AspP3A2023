@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP08Blogisek.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240326083746_Initial")]
+    [Migration("20240326085200_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -117,7 +117,7 @@ namespace ASP08Blogisek.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Article");
+                    b.ToTable("Articles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", b =>

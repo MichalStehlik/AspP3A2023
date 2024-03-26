@@ -114,7 +114,7 @@ namespace ASP08Blogisek.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Article");
+                    b.ToTable("Articles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", b =>

@@ -11,5 +11,7 @@ namespace ASP08Blogisek.Data
             : base(options)
         {
         }
+
+        public DbSet<Article> Articles { get; set; }
     }
 }

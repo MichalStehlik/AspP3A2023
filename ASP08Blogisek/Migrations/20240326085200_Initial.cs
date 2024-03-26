@@ -72,7 +72,7 @@ namespace ASP08Blogisek.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Article",
+                name: "Articles",
                 columns: table => new
                 {
                     ArticleId = table.Column<int>(type: "int", nullable: false)
@@ -84,9 +84,9 @@ namespace ASP08Blogisek.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Article", x => x.ArticleId);
+                    table.PrimaryKey("PK_Articles", x => x.ArticleId);
                     table.ForeignKey(
-                        name: "FK_Article_AspNetUsers_AuthorId",
+                        name: "FK_Articles_AspNetUsers_AuthorId",
                         column: x => x.AuthorId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -179,8 +179,8 @@ namespace ASP08Blogisek.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Article_AuthorId",
-                table: "Article",
+                name: "IX_Articles_AuthorId",
+                table: "Articles",
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
@@ -227,7 +227,7 @@ namespace ASP08Blogisek.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Article");
+                name: "Articles");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
