@@ -11,7 +11,7 @@ namespace ASP08Blogisek.Models
         [Required]
         public required string Content { get; set; }
         public DateTime Created { get; set; } = DateTime.Now;
-        public IdentityUser Author { get; set; }
-        public required string AuthorId { get; set; }
+        public ApplicationUser Author { get; set; }
+        public required Guid AuthorId { get; set; }
     }
 }
