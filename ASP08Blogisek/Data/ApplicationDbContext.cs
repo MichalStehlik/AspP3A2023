@@ -18,6 +18,7 @@ namespace ASP08Blogisek.Data
         {
             base.OnModelCreating(modelBuilder);
             var hasher = new PasswordHasher<ApplicationUser>();
+            /*
             modelBuilder.Entity<IdentityRole>(entity =>
             {
                 entity.HasData(new IdentityRole<Guid>
@@ -32,7 +33,7 @@ namespace ASP08Blogisek.Data
                     Name = "Author",
                     NormalizedName = "AUTHOR"
                 });
-            });
+            });*/
         }
     }
 }

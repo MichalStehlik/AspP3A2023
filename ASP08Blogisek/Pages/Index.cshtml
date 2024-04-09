@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
+<p>@Model.UserId</p>
 @if (Model.Articles.Count > 0)
 {
     @foreach (var article in Model.Articles)

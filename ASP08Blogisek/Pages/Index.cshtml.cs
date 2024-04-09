@@ -3,6 +3,7 @@ using ASP08Blogisek.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace ASP08Blogisek.Pages
 {
@@ -11,6 +12,7 @@ namespace ASP08Blogisek.Pages
         private readonly ILogger<IndexModel> _logger;
         private readonly ApplicationDbContext _context;
         public List<Article> Articles { get; set; } = new List<Article>();
+        public string UserId { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext context)
         {
@@ -21,6 +23,7 @@ namespace ASP08Blogisek.Pages
         public void OnGet()
         {
             Articles = _context.Articles.Include(a => a.Author).ToList();
+            UserId = User.Claims.Where(c => c.Type == ClaimTypes.NameIdentifier).FirstOrDefault()?.Value ?? "nic";
         }
     }
 }
