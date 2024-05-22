@@ -9,7 +9,7 @@ namespace ASP05GameStructure.Services
             Locations = new Dictionary<int, Location> {
                 { 0, new Location { Name="Vchod", Description = "<p>Jsi u vchodu do podzemí.</p>", ImagePath="entrance.jpg"} },
                 { 1, new Location { Name="Chodba", Description = "<p>Vešel jsi dovnitř, je tu tma.</p>"} },
-                { 2, new Location { Name="Levá místnost",Description = "<p>Mísnost je velmi zašlá.</p>"}},
+                { 2, new Location { Name="Levá místnost",Description = "<p>Místnost je velmi zašlá.</p>"}},
                 { 3, new Location { Name="Pravá místnost", Description = "<p>V místnosti je netopýr.</p>"} }
             };
             Connections = new List<Connection>
